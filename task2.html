@@ -1,0 +1,43 @@
+<html>
+    <head>
+      <title>12 columns Grid layout</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .h{
+            text-align: center;
+        }
+        .container{
+        
+            display: grid;
+            grid-area: auto auto auto auto;
+            height: 95%;
+            gap:2px;
+
+        }
+        .container1{
+            border: 1px red solid;
+           border-radius: 4px;
+            grid-area: 1/1/2/5;  
+        }  
+
+        .container2{
+            border: 1px red solid;
+            border-radius: 4px;
+            grid-area: 1/5/2/13;
+          
+        }    
+
+      </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container1">
+                <h1 class="h">layout 1</h1>
+               </div>
+               <div class="container2">
+                   <h1>layout2</h1>
+               </div>
+        </div>
+       
+    </body>
+</html>
