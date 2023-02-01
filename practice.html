@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First project</title>
+    <style>
+        .form{
+            border:1px solid;
+            height:300px;
+            width:400px;
+            margin :auto;
+            padding:10px;
+
+        }
+    </style>
+</head>
+<body style="text-align: center; background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+;">
+   <!-- This is h1 tag  -->
+    <h1 style="text-align: center;">Brugu Software Solutions</h1>
+    <!-- h2 tag -->
+    <h2 style="text-align: center;">Vazrh</h2>
+    <!-- div with background image -->
+    <div  style="background-image:url(https://pbs.twimg.com/media/Fi9JzqUaAAACF-B?format=jpg&name=4096x4096); width:800px;height:400px;margin: auto;">
+      <b style="color:white;">Hello Team!</b>
+    </div>
+    <!-- pragraph with anchor tag -->
+    <p>Brugu is fully featured blockchain development company. The overall development coming near to offer the right solutions to blockchain businesses.
+    Operations often waste effort on duplicate record keeping and third-party validations. Record-keeping systems can be vulnerable to fraud and cyberattacks. Limited transparency can slow data verification. And with the arrival of IoT, transaction volumes have exploded. All of this slows business, drains the bottom line — and means we need a better way. Enter blockchain Operations often waste effort on duplicate record keeping and third-party validations. Record-keeping systems can be vulnerable to fraud and cyberattacks. Limited transparency can slow data verification. And with the arrival of IoT, transaction volumes have exploded. All of this slows business, drains the bottom line — and means we need a better way. Enter blockchain
+
+    </p>
+    <a href="https://www.zaubacorp.com/company/BRUGU-SOFTWARE-SOLUTIONS-PRIVATE-LIMITED/U72900TG2019PTC133991">Brugu site...</a>
+    <!-- image with alt attribute -->
+    <span>
+        <img src="https://cdn2.vectorstock.com/i/1000x1000/17/21/blockchain-logo-design-vector-28501721.jpg" alt="Image" width="100px" height="100px">
+    </span>
+    
+    <!-- Orderlist,unorder list -->
+    <div style="margin-right: 100px;">
+        <ol>
+            <li> React</li>
+            <li>Node Js</li>
+            <li>Block Chain</li>
+        </ol>
+    </div>
+    <div style=" margin-right: 100px;">
+        <ul>
+            <li>Angular</li>
+            <li>Python</li>
+            <li>Rust</li>
+        </ul>
+    </div>
+    
+    <div style="margin-right: 100px;">
+        <ul >
+            <li style="color: green;">Angular</li>
+            <li style="color:yellow;">Python</li>
+            <li style="color:red;">Rust</li>
+        </ul>
+    </div>
+    
+    <!-- img tag with anchor tag -->
+    <a href="" download = "https://image.slidesharecdn.com/brugusoftwaresolutions-210521103256/85/brugu-software-solutions-private-ltd-hyderabad-india-uk-1-320.jpg?cb=1672292639"><img src="https://cdn2.vectorstock.com/i/1000x1000/17/21/blockchain-logo-design-vector-28501721.jpg"width="800px" height="400px"></a>
+
+    <!-- pragraph with italic,bold strike -->
+    <p>Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network.<b> An asset can be tangible (a house, car, cash, land) or intangible.</b> <i>(intellectual property, patents, copyrights, branding)</i>Virtually anything of value can be tracked and traded on a blockchain network, reducing risk and cutting costs for all involved. Business runs on information. The faster it’s received and the more accurate it is, the better.<s>Blockchain is ideal for delivering that information because it provides immediate, shared and completely transparent information stored on an immutable ledger that can be accessed only by permissioned network members</s></p>
+    <hr/>
+    <!-- Form -->
+    <div class="form">
+        <form>
+            <label>Gender:</label>
+                <input type="radio" name="Gender" value="men" onclick="asd(event)">Male
+                <input type="radio" name="Gender" value="women" onclick="asd(event)">Female
+                <input type="radio" name="Gender" value="others" onclick="asd(event) ">Others
+            
+            <br/>
+            <label>
+              Checkbox:<input type="checkbox" value="react" onclick="ads(event)">React
+              <input type="checkbox" id="subject" value="angular" onclick="ads(event)">Angular
+              <input type="checkbox" value="blockchain" onclick="ads(event)">Blockchain
+
+            </label>
+            <br/>
+            <label for="html">Name:</label>
+           <input type="text" maxlength="30" id="name">
+            
+            <br/>
+            <label for="html"> Number</label>
+            <input type="number" max="100" min="-10" id="number">
+            
+            <br/>
+            <label for="html">Email</label>
+           <input type="email" placeholder="Email" id="email">
+            
+            <br/>
+            <label   for="html"> Password:</label>
+            <input type="password" minlength="12" placeholder="password" id="password">
+            
+            <br/>
+            <label for="html">Date:</label>
+            <input type="date" min="2023-01-21" id="date">
+            
+            <br/>
+            
+        </form>
+        
+            <button type="submit" onclick="submit()" >submit</button>
+        
+
+        <script>
+            var cr={r:"",a:"",b:""};
+            var br;
+            function asd(e){
+                br=e.target.value
+            }
+            function ads(e){
+                if(e.target.value==="react"){
+                    cr.r=e.target.value
+                } 
+                else if(e.target.value==="angular"){
+                    cr.a=e.target.value
+                }
+               else{
+                cr.b=e.target.value
+               }
+            }
+         function submit(){
+            //   gen=document.getElementById("gender").value
+            //   sub=document.getElementById("subject").value
+              nam=document.getElementById("name").value
+              num=document.getElementById("number").value
+              mail=document.getElementById("email").value
+              pass=document.getElementById("password").value
+              dat=document.getElementById("date").value
+              console.log(br)
+              console.log(cr.r+cr.a+cr.b)
+              console.log(nam)
+              console.log(num)
+              console.log(mail)
+              console.log(pass)
+              console.log(dat)
+         }
+        </script>
+    </div>
+
+</body>
+</html>
