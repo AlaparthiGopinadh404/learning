@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive layout</title>
+       
+        <style>
+            .container{
+                text-align: center;
+                /* --auto-grid-min-size: 16rem; */
+                display: grid;
+               grid-area: auto;
+               /* grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); */
+                gap: 10px;
+                height: 97%;
+
+            }
+            .head{
+                text-align: center;
+                border: 1px red solid;
+                border-radius: 5px;
+                padding: 5px;
+                grid-column: 1/13;
+            }
+            .nav{
+                text-align: center;
+                border: 1px red solid;
+                border-radius: 5px;
+                padding: 5px;
+                grid-area: 2/4/3/11;
+
+            }
+            .main{
+                border: 1px red solid;
+                border-radius: 5px;
+                padding: 5px;
+                flex:1;
+                grid-area: 3/4/10/11;
+            }
+            .side{
+                border: 1px red solid;
+                border-radius: 5px;
+                padding: 5px;
+                grid-area: 2/1/10/4;
+                
+                
+            }
+            .add{
+                border: 1px red solid;
+                border-radius: 5px;
+                padding: 5px;
+                grid-area: 2/11/10/13;
+            }
+            .footer{
+                border: 1px red solid;
+                border-radius: 10px;
+                padding: 5px;
+                grid-column: 1/13;
+            }
+            @media (max-width:900px) {
+                .head{
+                    grid-column: 1/13;
+                }
+                .nav{
+                    grid-column: 1/13;
+                }
+                .main{
+                    grid-area: 3/3/11/13;
+                }
+                .side{
+                    grid-area: 3/1/11/3;
+                }
+                .add{
+                    grid-area: 11/1/12/3;
+
+                }
+                .footer{
+                    grid-area: 11/3/12/13;
+                }
+                
+            }
+            @media (max-width:600px){
+                .head{
+                    grid-column: 1/13;
+                }
+                .nav{
+                    grid-column: 1/13;
+
+                }
+                .main{
+                    grid-column: 1/13;
+                    grid-area: 3/1/9/13;
+                }
+                .side{
+                    grid-column: 1/13;
+                    grid-area: 10/1/10/13;
+               }
+                .add{
+                    grid-column: 1/13;
+                    grid-area: 11/1/11/13;
+                }
+                .footer{
+                    grid-column: 1/13;
+                    grid-area: 12/1/12/13;
+
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <h1>Header</h1>
+            </div>
+            <div class="nav">
+                <h1>Navigation</h1>
+            </div>
+            <div class="main">
+                <h1>Main</h1>
+            </div>
+            <div class="side">
+                <h1>side bar</h1>
+            </div>
+            <div class="add">
+                <h1>Ads</h1>
+            </div>
+            <div class="footer">
+                <h1>Footer</h1>
+            </div>
+
+        </div>
+    </body>
+</html>
