@@ -5,12 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>landing page</title>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ioniconsioniconsjs">
+        
+        </script>
         <style>
             .image{
                 background: url("https://assets.architecturaldigest.in/photos/60084d6a4dda7446f939b950/16:9/w_2560%2Cc_limit/imaginima_getty-images-1366x768.jpg");
                  position: relative;
                  height: 700px;
+                 background-repeat: no-repeat;
+                 background-size: cover;
             }
           .container{
             
@@ -18,9 +22,10 @@
             height: 450px;
             
           }
-          .logo{
-            width:15%;                         
-          }
+          /* .logo{
+           width:50%;
+
+          } */
           .h1{
             width: 83%;
             display: flex;
@@ -29,10 +34,14 @@
             gap:40px;
             text-decoration: none;  
           }
+          .h1 li a:hover{
+            background-color: gray;
+
+          }
           .t1{
              position: absolute;
-             top: 20%;
-             left:20%;
+             top: 40%;
+             left:10%;    
           }
           .d1{
             height: 30px;
@@ -144,24 +153,25 @@
             width: 200px;
             height: 200px;
             border: 1px solid gray;
-            background-image: url(https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-            color: white;
+            /* background-image: url(https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); */
+            color:black;
             text-align: center;
+            
            }
            .emai{
             width: 200px;
             height: 200px;
             border: 1px solid gray;
-            background-image: url(https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-            color: white;
+            /* background-image: url(https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); */
+            color: black;
             text-align: center;
            }
            .add{
             width: 200px;
             height: 200px;
             border: 1px solid gray;
-            background-image: url(https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-            color: white;
+            /* background-image: url(https://images.unsplash.com/photo-1453959022778-cfda85dbe0f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); */
+            color: black;
             text-align: center;
            }
            .info{
@@ -195,8 +205,6 @@
             color: red;
            }
            
-           
-          
         </style>
     </head>
     <body>
@@ -208,9 +216,9 @@
                 <ul  type="none"class="h1">
                     <li><a href="#home" >Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="">projects</a></li>
-                    <li><a href="">About</a></li>
-                    <li> <a href="#ContactUs">Contact Us</a></li>     
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#about">About</a></li>
+                     <li> <a href="#contactus">Contact</a></li>     
                 </ul>    
             </div>
             <div class="t1">
@@ -222,7 +230,7 @@
         </div>         
         </section>
         <br>
-        <section>
+        <section id="services">
             <h1 class="service">SERV<span>I</span>CES</h1>
             <p class="para">In publishing and graphic design,  Lorem ipsum is a placeholder text commonly<br> used to demonstrate the visual form of a document or <br>a typeface without relying on meaningful content.
                  Lorem ipsum <br>may be used as a placeholder before final copy is available.</p>
@@ -230,23 +238,27 @@
         <div class="design">
             <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Settings_%28iOS%29.png/800px-Settings_%28iOS%29.png" alt="">
+                <h2 style="color: white;">Web Design</h2>
                 <p>In publishing and graphic design,  Lorem ipsum is a placeholder text commonly<br> used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
             </div>
             <div >
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Settings_%28iOS%29.png/800px-Settings_%28iOS%29.png" alt="">
+                <h2 style="color: white;">Web Design</h2>
                 <p>In publishing and graphic design,  Lorem ipsum is a placeholder text commonly<br> used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
             </div>
             <div >
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Settings_%28iOS%29.png/800px-Settings_%28iOS%29.png" alt="">
+                <h2 style="color: white;">Web Design</h2>
                 <p>In publishing and graphic design,  Lorem ipsum is a placeholder text commonly<br> used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
             </div>
             <div >
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Settings_%28iOS%29.png/800px-Settings_%28iOS%29.png" alt="">
+                <h2 style="color: white;">Web Design</h2>
                 <p>In publishing and graphic design,  Lorem ipsum is a placeholder text commonly<br> used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
             </div>
         </div>
         <br>
-        <div class="project">
+        <div class="project" id="projects">
            <h1 class="h2" >RECENT <span>PROJECTS</span></h1>
         <div class="projectt">
            
@@ -277,19 +289,19 @@
         <div >
             <div class="about"></div>
         </div>
-        <div class="resume">
+        <div class="resume" id="about">
             <h1>ABOUT <span>ME</span></h1>
 
-            <p>Google and YouTube are the two most visited websites worldwide followed by Facebook and Twitter. Google is also the largest search engine, mapping and navigation application, email provider, office suite, video sharing platform, photo and cloud storage provider, mobile operating system, web browser, ML framework, and AI virtual assistant provider in the world as measured by market share. On the list of most valuable brands, Google is ranked second by Forbes[18] and fourth by Interbrand.[19] It has received significant criticism involving issues such as privacy concerns, tax avoidance, censorship, search neutrality, antitrust and abuse of its monopoly position.
+            <p>Google and YouTube are the two most visited websites worldwide followed by Facebook and Twitter. Google is also the largest search engine, mapping and navigation application, email provider, office suite, video sharing platform, photo and cloud storage provider, mobile operating system, web browser, ML framework, and AI virtual assistant provider in the world as measured by market share. On the list of most valuable brands, Google is ranked second by Forbes and fourth by Interbrand. It has received significant criticism involving issues such as privacy concerns, tax avoidance, censorship, search neutrality, antitrust and abuse of its monopoly position.
     
             </p>
-            <button  style=" border: 1px red solid;">DOWNLOAD RESUME</button>
+            <a href="" download="http://127.0.0.1:5500/learning/assignment2.html">Download</a>
         </div>
         
         
-    </div id="ContactUs">
+    </div>
     <h1 class="info" style="margin-top: 200px;">CONTACT<span>  INFO</span> </h1>
-    <div class="contact">
+    <div class="contact"  id="contactus">
         <div class="phn"><h1>phone</h1>
             <ion-icon name="call-outline" style="font-size: 50px;"></ion-icon>
             <h4 style="font-size: 20px;">7896757432</h4>
@@ -300,7 +312,7 @@
             <h4 style="font-size: 20px;">gopi@gmail.com</h4>
         </div>
         <div class="add"><h1>Address</h1>
-            <!-- <ion-icon name="add-circle-outline" style="font-size: 50px;"></ion-icon> -->
+            
             <ion-icon name="home-outline" style="font-size:50px;"></ion-icon>
             <h4 style="font-size: 20px;">Hyderabad</h4>
         </div>
