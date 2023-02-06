@@ -1,3 +1,4 @@
+
 .navbar{
     justify-content: center;
     position: fixed;
@@ -82,4 +83,42 @@ justify-content: center;
 .but{
     border-radius: 0px 10px 0px 0px;
     background-color: crimson;
+    margin-left: 50%;
+}
+.images{
+    display: grid;
+    position: relative;   
+}
+.text{
+    text-align: center;
+}
+.ground{
+    position: relative;
+    padding: 10px;
+    height: 400px;
+}
+.ground1{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+    
+    background-color: white;
+}
+.ground2{
+    position: absolute;
+    margin-left:5% ;
+   margin-top: 5%;
+    background-color: white;
+    
+}
+.ground3{
+    position: absolute;
+    left:10% ;
+    margin-bottom: 10%;
+    background-color: white;
+   
+}
+
+.i{
+    border-radius: 50%;
 }
