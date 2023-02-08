@@ -1,0 +1,57 @@
+.wholeBody{
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.mainText:hover{
+    color: #5846e0;
+}
+.articles{
+    text-align: center;
+    color: #051C1D;
+}
+.p{
+  color: #9599BB;;
+}
+.para{
+    text-align: center;
+    color: #9599BB;
+}
+.para
+    {
+        animation: 2s anim-lineUp ease-out ;
+      }
+      @keyframes anim-lineUp {
+        0% {
+          opacity: 0;
+          transform: translateY(80%);
+        }
+        20% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
+.readmore:hover{
+    color: #051C1D;
+}
+.imagess:hover{
+    transform: rotate(2deg);
+    opacity: 0.7; 
+ 
+    
+}
+.imagessz:hover{
+    transform: rotate(2deg);
+    opacity: 0.7;    
+}
+.cardForHover{
+  width: 400px;
+  border: 1px solid #9599BB ;
+}
