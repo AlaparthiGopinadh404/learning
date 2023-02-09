@@ -1,22 +1,25 @@
-.wholeBody{
+#s7 .wholeBody{
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
 }
-.mainText:hover{
+#s7 .mainText{
+  font-family: 'poppins',sans-serif;
+}
+#s7 .mainText:hover{
     color: #5846e0;
 }
-.articles{
+ #s7 .articles{
     text-align: center;
     color: #051C1D;
 }
-.p{
-  color: #9599BB;;
-}
-.para{
+#s7 .para{
     text-align: center;
     color: #9599BB;
 }
-.para
+#s7 .para1{
+  color:#9599BB;
+}
+#s7 .para
     {
         animation: 2s anim-lineUp ease-out ;
       }
@@ -38,20 +41,16 @@
         }
       }
 
-.readmore:hover{
+ #s7 .readmore:hover{
     color: #051C1D;
 }
-.imagess:hover{
+#s7 .imagess:hover{
     transform: rotate(2deg);
     opacity: 0.7; 
  
     
 }
-.imagessz:hover{
+#s7 .imagessz:hover{
     transform: rotate(2deg);
     opacity: 0.7;    
-}
-.cardForHover{
-  width: 400px;
-  border: 1px solid #9599BB ;
 }

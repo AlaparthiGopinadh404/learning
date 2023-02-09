@@ -1,0 +1,18 @@
+.not{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    left: 65%;
+    bottom: 0%;
+    font-size: 10px;
+}
+.bi-laptop{
+    background-color: primary;
+}
+/* .nav-item{
+    color: gray;
+    font-weight: 300;
+
+} */
