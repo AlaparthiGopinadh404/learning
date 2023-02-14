@@ -14,31 +14,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="bg-light">
         <section>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <nav class="navbar navbar-expand-lg bg-white p-2 m-2">
                 <div class="container-fluid">
                     <div class="w-25 h-50">
                         <img src="https://themewagon.github.io/elaadmin/images/logo.png" class="w-50 h-50" alt=""> 
                         <a href="#" class="text-secondary px-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                            </svg>
+                            <button class="btn px-3" onclick="asd()" >
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                         </a>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="w-25 d-flex justify-content-end">
                         <div class="w-50 d-flex justify-content-around">
-                            <div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#909090" class="bi bi-search" viewBox="0 0 16 16">
+                            <div >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#909090" class="bi bi-search" viewBox="0 0 16 16">
                                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                                 </svg>
                             </div>
                             <div>
                                 <a gtm-id="Notifications" role="button" class="not h-50" alt="Notifications" aria-haspopup="true" aria-expanded="false">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#909090" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#909090" class="bi bi-bell-fill" viewBox="0 0 16 16">
                                         <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
                                       </svg>
                                     <p class="badge rounded-pill badge-notification bg-danger" alt="Notifications">3</p>
@@ -46,7 +43,7 @@
                             </div>
                             <div>
                                 <a gtm-id="Notifications" role="button" class="not" alt="Notifications" aria-haspopup="true" aria-expanded="false">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#909090" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#909090" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                                       </svg>
                                       <p class="badge rounded-pill badge-notification bg-primary" alt="Notifications">4</p>
@@ -65,25 +62,26 @@
         
         
         </section>
-        <div class="px-3">
+        
         <div class="row ">
-            <div class="col-md-2 col-sm-12 col-lg-2  ">
-                <sidenav>
+            <div class="col-md-2 col-sm-12 col-lg-2 bg-white ">
+                <sidenav id="side">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <div class="bg-light d-flex justify-content-around"> <li class="nav-item">
                             <a href="#"><li class="active">
                                 <a href="#" class="text-decoration-none bg-light w-100">
                                     <ion-icon name="desktop-outline"></ion-icon>
-                                   <span class="px-5">Dashboard</span>
+                                   <span class="px-2">Dashboard</span>
                                 </a>
                             </a>
-                        </li>
+                        </li></div>
+                        <div class="">
                         <li class="nav-item">  
-                            <p><strong class="p-2 m-2 pt-3">UI ELEMENTS</strong></p>
+                            <p id="ui" ><strong class="p-2">UI ELEMENTS</strong></p>
                             <a class="nav-link  d-flex justify-content-around p-2" href="#"><span> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                                 <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                                 <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
-                              </svg></span> <span class="fw-bold text-secondary "> Components</span>
+                              </svg></span> <span class="text-secondary " id="compon"> Components</span>
                                 <span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -96,7 +94,7 @@
                                     fill="currentColor" class="bi bi-table" viewBox="0 0 16 16">
                                     <path
                                         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
-                                </svg> <span class="fw-bold text-muted">Tables</span> <svg
+                                </svg> <span class=" text-muted"id="tab">Tables</span> <svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-chevron-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -111,7 +109,7 @@
                                 <path
                                     d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
                             </svg></span>
-                                <span class="fw-bold text-muted">Forms</span>  <span><svg
+                                <span class=" text-muted"id="for" >Forms</span>  <span><svg
                                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                     class="bi bi-chevron-right" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
@@ -119,13 +117,13 @@
                                 </svg></span></a>
                         </li>
                     </ul>
-                    <p><strong class="p-2 m-2 pt-3">ICONS</strong></p>
+                    <p><strong class="p-2 m-2 pt-3" id="ic">ICONS</strong></p>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link d-flex justify-content-around p-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
                                 <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
                                 <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
-                              </svg><span class=" fw-bold text-secondary">Icons</span><svg
+                              </svg><span class="text-secondary" id="icon">Icons</span><svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -135,7 +133,7 @@
                         <li class="nav-item">
                             <a class="nav-link d-flex justify-content-around p-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                              </svg> <span class="  fw-bold text-muted">widgets</span> <svg
+                              </svg> <span class=" text-muted" id="widg">widgets</span> <svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -146,7 +144,7 @@
                             <a class="nav-link d-flex justify-content-around p-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-richtext" viewBox="0 0 16 16">
                                 <path d="M7 4.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V7.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V7s1.54-1.274 1.639-1.208zM5 9a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
                                 <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
-                              </svg> <span class=" fw-bold text-muted">Charts</span> <svg
+                              </svg> <span class="text-muted" id="char">Charts</span> <svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -156,7 +154,7 @@
                         <li class="nav-item">
                             <a class="nav-link d-flex justify-content-around p-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
                                 <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
-                              </svg> <span class=" fw-bold text-muted">Maps</span> <svg
+                              </svg> <span class=" text-muted" id="map">Maps</span> <svg
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -164,12 +162,12 @@
                             </svg></a>
                         </li>
                     </ul>
-                    <p><strong class="p-2 m-2 pt-3">EXTRAS</strong></p>
+                    <p><strong class="p-2 m-2 pt-3"id="extr">EXTRAS</strong></p>
                     <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link d-flex justify-content-around p-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
                             <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
-                          </svg> <span class="  fw-bold text-muted">pages</span> <svg
+                          </svg> <span class=" text-muted" id="pag">pages</span> <svg
                             xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -177,10 +175,50 @@
                         </svg></a>
                     </li>
                 </ul>
+            </div>
                 </sidenav>
             </div>
             <div class="col-md-10"></div>
         </div>
     </div>
+ 
+    <script>
+
+        var i = 0;
+
+
+      
+     function asd() {
+       i++;
+       if(i%2 ==0){
+     document.getElementById("compon").style.display="none";
+      document.getElementById("tab").style.display="none";
+      document.getElementById("for").style.display="none";
+      document.getElementById("icon").style.display="none";
+      document.getElementById("widg").style.display="none";
+      document.getElementById("char").style.display="none";
+      document.getElementById("map").style.display="none";
+      document.getElementById("pag").style.display="none";
+      document.getElementById("ui").style.display="none";
+      document.getElementById("ic").style.display="none";
+      document.getElementById("extr").style.display="none";
+       }
+       else{
+        document.getElementById("compon").style.display="block";
+       document.getElementById("tab").style.display="block";
+       document.getElementById("for").style.display="block";
+       document.getElementById("icon").style.display="block";
+       document.getElementById("widg").style.display="block"; 
+       document.getElementById("char").style.display="block";
+       document.getElementById("map").style.display="block";
+       document.getElementById("pag").style.display="block";
+       document.getElementById("ui").style.display="block";
+       document.getElementById("ic").style.display="block";
+       document.getElementById("extr").style.display="block";
+       document.getElementById("side").style.width="100px";
+       }
+
+     }
+    </script>
     </body>
 </html>

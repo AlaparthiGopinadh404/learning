@@ -11,8 +11,10 @@
 .bi-laptop{
     background-color: primary;
 }
-/* .nav-item{
-    color: gray;
-    font-weight: 300;
-
-} */
+.nav-item {
+    color: grey;
+    font-weight: 500;
+}
+.nav-item:hover {
+    color: rgb(15, 96, 178);
+}

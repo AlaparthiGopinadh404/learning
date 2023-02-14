@@ -1,0 +1,135 @@
+:root {
+    --theme-color: #FA4A0C;
+    --white-text: #FFFFFF;
+    --text-black: #000000;
+    --font-text: 'Poppins', sans-serif;
+    --sub-font:#737373;
+}
+body{
+  font-family:var(--font-text) ;
+  overflow-x: hidden !important;  
+ 
+}
+.home{
+    color: #FA4A0C;
+}
+.orangeText {
+    color: var(--theme-color);
+}
+
+.bi-twitter{
+    color: var(--theme-color);
+}
+.bi-facebook{
+    color: var(--theme-color);
+}
+.bi-instagram{
+    color: var(--theme-color);
+}
+.playstore{
+    background-color: var(--theme-color);
+    color: #FFFFFF;
+    border-radius: 7px;
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
+    border: var(--theme-color) 2px solid;
+    padding: 2px;
+}
+.appstore{
+    background-color: transparent;
+    color: #FFFFFF;
+    border-radius: 7px;
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
+    border: var(--white-text) 2px solid;
+    padding: 2px;
+}
+.play{
+    background-color: var(--theme-color);
+    color: #FFFFFF;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: x-large;
+    border: var(--theme-color) 1px solid;
+
+}
+.app{
+
+        background-color: transparent;
+        color: #FFFFFF;
+        border-radius: 25px;
+        width: 150px;
+        height: 50px;
+        font-size: x-large;
+        border: var(--white-text) 2px solid;
+    
+}
+.frist{
+
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 550px;
+    position: relative;
+}
+/* .ab1{
+    position: absolute;
+    top:400px;
+    left:650px;
+    width:600px !important ;
+    height:250px !important;
+
+}
+
+.ab2{
+    position: absolute;
+    top:220px;
+    left:500px;
+    width:250px !important;
+    height: 150px !important;
+    
+} */
+.groupimage{
+    width: 500px;
+    margin-left: 30%;
+
+}
+.hr{
+    height: 500px;
+}
+.la{
+    background-image: url("../images/footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+.listdots{
+        list-style: none;
+    }
+.whole{
+        
+        font-family: var(--font-text);
+    }
+
+@media (max-width:600px){
+    .groupimage{
+        width: 390px;
+        margin-left: 30%;
+    }
+    .whole{
+        overflow-x: hidden;
+    }
+    .groupimage{
+        width: 350px;
+        margin-left: -10%;
+        margin-top: 1%;
+    }
+    
+
+        
+}
